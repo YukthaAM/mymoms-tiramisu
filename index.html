@@ -8,7 +8,7 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --cream:#f0ece6;
+  --cream:#231706;
   --brown:#7B4A1E;
   --brown-dark:#3D2308;
   --biscoff:#C8622A;
@@ -29,7 +29,7 @@ body{font-family:'Lato',sans-serif;background:var(--cream);color:var(--text);ove
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(250,246,240,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,98,42,0.2);height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;}
 .nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none;}
-.nav-logo-img{width:42px;height:42px;object-fit:contain;}
+.nav-logo-circle{width:42px;height:42px;border-radius:50%;background:var(--biscoff);color:var(--cream);font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;}
 .nav-logo-text{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--brown-dark);line-height:1.2;}
 .nav-logo-sub{font-size:.65rem;color:var(--biscoff);font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:block;}
 .nav-links{display:flex;list-style:none;gap:1.8rem;}
@@ -195,12 +195,12 @@ footer{background:#1E0F05;padding:2.5rem 2rem;text-align:center;}
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-  <img src="assets/mymoms-logo-icon.png" alt="My Mom's Desserts" class="nav-logo-img">
-  <div>
-    <span class="nav-logo-text">My Mom's Dessert</span>
-    <span class="nav-logo-sub">Biscoff Tiramisu</span>
-  </div>
-</a>
+    <div class="nav-logo-circle">M</div>
+    <div>
+      <span class="nav-logo-text">My Mom's Dessert</span>
+      <span class="nav-logo-sub">Biscoff Tiramisu</span>
+    </div>
+  </a>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
